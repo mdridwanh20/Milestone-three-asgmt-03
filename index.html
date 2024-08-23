@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Three</title>
+
+    <!-- box icon CDN link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind customize your configuration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+
+    <!-- tailwind CDN link here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link here -->
+    <link rel="stylesheet" href="./src/main.css">
+    
+</head>
+<body>
+    
+    <header class=" bg-gray-50 p-4">
+          <!-- --------------------------------------------------------------banner here -->
+          <div class="hero container mx-auto py-5">
+            <div class="hero-content text-center">
+              <div class=" flex flex-col justify-center items-center  ">
+                <img class="w-full lg:w-2/6" src="./assets/banner.png" alt="">
+                <h1 class="text-3xl w-full lg:w-2/3 lg:text-5xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 w-full lg:w-1/2">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn font-bold rounded-full px-10 bg-[#ABEF5F]">View Details <i class='bx text-3xl bxs-right-arrow-alt'></i></button>
+              </div>
+            </div>
+          </div>
+  
+    </header>
+    <main class=" bg-gray-100">
+          <!-- --------------------------------------------------------------about section here -->
+      <section class="container mx-auto py-24">
+              <div class="about-section hero">
+                <div class="hero-content grid grid-cols-1 lg:grid-cols-2 gap-10 ">
+                <!-- about text here -->
+                      <div>
+                        <button class="btn font-bold rounded-full my-4 shadow-none px-6 bg-white"><i class='bx text-3xl bxs-right-arrow-alt'></i> About us</button>
+                        <h1 class="text-3xl w-full lg:text-5xl font-extrabold">We design thoughtful, liveable spaces</h1>
+                        <p class="py-6">
+                          The barn house captivates with its blend of rustic charm and
+                          modern sophistication, featuring weathered wood, sleek metal accents.
+                        </p>
+
+                      <!--  card here -->
+                          <div class="card-container space-y-4 grid grid-cols-1">
+                        <!-- card one -->
+                              <div class="hero-content bg-white shadow-md p-6 rounded-md">
+                                <img src="./assets/commercial.png" alt="">
+
+                                <div>
+                                  <h1 class="text-2xl font-bold">Commercial</h1>
+                                  <p class="py-2">
+                                    The barn house captivates with its blend of rustic charm and modern.
+                                  </p>
+                                </div>
+                              </div>
+
+                        <!-- card two -->
+                              <div class="hero-content bg-white shadow-md p-6 rounded-md">
+                                <img src="./assets/residential.png" alt="">
+
+                                <div>
+                                  <h1 class="text-2xl font-bold">Residential</h1>
+                                  <p class="py-2">
+                                    The barn house captivates with its blend of rustic charm and modern.
+                                  </p>
+                                </div>
+                              </div>
+                          </div>
+
+
+                      </div>
+                
+                <!-- about image here -->
+                      <div class="lg:flex justify-end ">
+                          <img
+                          src="./assets/Rectangle.png"
+                          class="" />
+                      </div>
+                </div>
+
+              </div>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+</body>
+</html>
