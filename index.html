@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    
+
     <!-- tailwind customize your configuration -->
     <script>
         tailwind.config = {
@@ -33,8 +35,55 @@
     
 </head>
 <body>
-    
+
+
     <header class=" bg-gray-50 p-4">
+
+          <nav class="container mx-auto flex items-center justify-between ">
+              <!-- brand logo here -->
+                  <div class="brand-logo">
+                      <img src="./assets/logo.svg" alt="brand logo">
+                  </div>
+              <!-- menu links here -->
+                  <div class="lg:block hidden">
+                      <ul class="flex items-center ">
+                        <li><a class="text-black hover:text-black p-3 hover:font-normal" href="#">Home</a></li>
+                        <li><a class="text-gray-600 hover:text-black p-3 hover:font-normal" href="#">Services</a></li>
+                        <li><a class="text-gray-600 hover:text-black p-3 hover:font-normal" href="#">Portfolio</a></li>
+                        <li><a class="text-gray-600 hover:text-black p-3 hover:font-normal" href="#">Blog</a></li>
+                        <li><a class="text-gray-600 hover:text-black p-3 hover:font-normal" href="#">Contact Us</a></li>
+                      </ul>
+                  </div>
+              <!-- nav-icon and hamburger here -->
+                    <div class="flex items-center">
+                  <!-- icon here -->
+                        <div class="flex items-center ">
+                             <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" 
+                                class="size-5 me-4">
+                                  <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 me-4">
+                                  <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                                </svg>
+                             </div>
+
+                              <button 
+                              class="btn font-bold rounded-full px-6 bg-[#ABEF5F]">Book Consult
+                              <i class='bx text-3xl bxs-right-arrow-alt'></i></button>
+                        </div>
+                  <!-- hamburger -->
+                        <div class="lg:hidden mx-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                        </div>
+
+                </div>
+
+          </nav>
+
           <!-- --------------------------------------------------------------banner here -->
           <div class="hero container mx-auto py-5">
             <div class="hero-content text-center">
@@ -99,7 +148,7 @@
                       <div class="lg:flex justify-end ">
                           <img
                           src="./assets/Rectangle.png"
-                          class="" />
+                          class="w-full" />
                       </div>
                 </div>
 
@@ -162,39 +211,50 @@
             </div>
 
          <!-- portfolio card container -->
-          <div class="portfolio-container grid grid-cols-5 gap-8 mt-10">
+          <div class="portfolio-container grid lg:grid-cols-5 gap-8 mt-10">
 
         <!-- card one -->
-              <div class="col-span-3 bg-white rounded-lg shadow-md flex items-center p-4 space-x-5">
-                    <img class="h-full" src=" ./assets/img1.png" alt="">
-                    <div class="">
-                        <h2 class="text-2xl font-bold">Concept</h2>
-                        <p class="">
-                          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                        </p>
-                        <button class="font-bold flex items-center">View Details <i class='bx text-3xl bxs-right-arrow-alt'></i></button>
-                    </div> 
+              <div class="md:col-span-3 bg-white rounded-lg shadow-md items-center p-4 ">
+                <!-- card one cnt -->
+                  <div class="hero-content flex-col sm:flex-row">
+                      <img class="w-full md:max-w-md" src="./assets/img1.png" alt="">
+
+                        <div class="">
+                          <h2 class="text-2xl font-bold">Commercial</h2>
+                          <p class="">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                          </p>
+                          <button class="font-bold flex items-center">View Details <i class='bx text-3xl bxs-right-arrow-alt'></i></button>
+                      </div> 
+                  </div>
+      
               </div>
+
         <!-- card two -->
-              <div class="portfolio-card two col-span-2 bg-white rounded-lg shadow-md flex items-center p-4  ">
+              <div class=" two col-span-2 bg-white rounded-lg shadow-md flex items-center p-4  ">
                 <img class="max-h-48 rounded-md w-full object-cover" src="./assets/img2.png" alt="">
               </div>
 
               
         <!-- card three -->
-              <div class=" portfolio-card three  bg-white rounded-lg shadow-md flex items-center p-4  ">
+              <div class="   bg-white rounded-lg shadow-md flex items-center p-4  ">
                 <img class="h-full" src="./assets/img3.png" alt="">
               </div>
         <!-- card four -->
-              <div class=" col-span-3 bg-white rounded-lg shadow-md flex items-center p-4 space-x-5">
-                <img class="h-full" src="./assets/img4.png" alt="">
-                <div class="">
-                    <h2 class="text-2xl font-bold">Concept</h2>
-                    <p class="">
-                      The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                    </p>
-                    <button class="font-bold flex items-center">View Details <i class='bx text-3xl bxs-right-arrow-alt'></i></button>
-                </div> 
+              <div class="md:col-span-3 bg-white rounded-lg shadow-md flex items-center p-4 space-x-5">
+                <!-- card four cnt -->
+                <div class="flex flex-col sm:flex-row space-x-3">
+                  <img class="w-full md:max-w-md" src="./assets/img4.png" alt="">
+
+                  <div class="">
+                      <h2 class="text-2xl font-bold">Commercial</h2>
+                      <p class="">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                      </p>
+                      <button class="font-bold flex items-center">View Details <i class='bx text-3xl bxs-right-arrow-alt'></i></button>
+                  </div> 
+                </div>
+
               </div>
 
         <!-- card five -->
@@ -203,6 +263,7 @@
               </div>
 
           </div>
+
 
        </section>
 
@@ -281,6 +342,102 @@
 
         </section>
 
+
+        <!-- section feedback -->
+         <section>
+              <div class="feedback-container container mx-auto px-4 py-16">
+                <!-- feedback heading text -->
+                   <div class="heading-text">
+                      <h2 class="text-1xl font-normal">FEEDBACK FROM BUYERS</h2>
+                        <h1 class="text-3xl w-full lg:w-2/3 lg:text-5xl font-bold">Clients Testimonials</h1>
+                   </div>
+
+                <!-- feedback card container -->
+                      
+                       <div class="feedback-card-container grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12 mt-6">
+                      <!-- one card here -->
+                           <div class="bg-white py-12 px-8 rounded-md shadow-inherit space-y-5">
+                               <!-- client name and profession -->
+                             <div class="flex items-center space-x-3">
+                              <img class="max-w-12 rounded-full object-cover" src="./assets/client-1.jpeg" alt="">
+
+                              <div>
+                                <h2 class="text-lg font-bold">Susan Barkley</h2>
+                                <p>Happy buyer, Germany</p>
+                              </div>
+
+                            </div>
+                            <!-- client description -->
+                              <div class="space-y-2">
+                                <p class="text-sm">The WP Estate team did an outstanding job helping me buy my first home. The high level of service and dedication to seeing things done the right way is what I look for in an agent.</p>
+                                <ul class="flex items-center">
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                </ul>
+                          
+                              </div>
+                           </div>
+                      <!-- two card here -->
+                           <div class="bg-white py-12 px-8 rounded-md shadow-inherit space-y-5">
+                               <!-- client name and profession -->
+                             <div class="flex items-center space-x-3">
+                              <img class="max-w-12 rounded-full object-cover" src="./assets/client-1.jpeg" alt="">
+
+                              <div>
+                                <h2 class="text-lg font-bold">Susan Barkley</h2>
+                                <p>Happy buyer, Germany</p>
+                              </div>
+
+                            </div>
+                            <!-- client description -->
+                              <div class="space-y-2">
+                                <p class="text-sm">The WP Estate team did an outstanding job helping me buy my first home. The high level of service and dedication to seeing things done the right way is what I look for in an agent.</p>
+                                <ul class="flex items-center">
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                </ul>
+                          
+                              </div>
+                           </div>
+
+                      <!-- three card here -->
+                           <div class="bg-white py-12 px-8 rounded-md shadow-inherit space-y-5">
+                               <!-- client name and profession -->
+                             <div class="flex items-center space-x-3">
+                              <img class="max-w-12 rounded-full object-cover" src="./assets/client-1.jpeg" alt="">
+
+                              <div>
+                                <h2 class="text-lg font-bold">Susan Barkley</h2>
+                                <p>Happy buyer, Germany</p>
+                              </div>
+
+                            </div>
+                            <!-- client description -->
+                              <div class="space-y-2">
+                                <p class="text-sm">The WP Estate team did an outstanding job helping me buy my first home. The high level of service and dedication to seeing things done the right way is what I look for in an agent.</p>
+                                <ul class="flex items-center">
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                  <li><i class='pe-0.5 text-yellow-400 bx bxs-star'></i></li>
+                                </ul>
+                          
+                              </div>
+                           </div>
+
+                       </div>
+              </div>
+         </section>
+
+
+
         <!-- connect section or form -->
         <section class="px-4 py-16 ">
               <div class="container mx-auto">
@@ -337,10 +494,7 @@
                   </div>
               </div>
         </section>
-
     </main>
-
-
 
       <footer class="bg-[#1C1C1C] py-16">
 
